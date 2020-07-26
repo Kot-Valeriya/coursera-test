@@ -33,6 +33,7 @@ WARNING!!! WARNING!!!
 // Wrap the entire contents of script.js inside of an IIFE
 // See Lecture 52, part 2
 // (Note, Step 2 will be done in the SpeakHello.js file.)
+
 (function(){
 var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
 
@@ -41,11 +42,13 @@ var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula"
 // using the 'speak' method or either helloSpeaker's or byeSpeaker's
 // 'speak' method.
 // See Lecture 50, part 1
-for (var i=0;i<names.lenght;i++) {/* fill in parts of the 'for' loop to loop over names array */
-if(names[i].toLowerCase(names[i].charAt(0))=='j'){
+
+for (var i = 0; i < names.length; i++)  {/* fill in parts of the 'for' loop to loop over names array */
+
+if(names[i].charAt(0).toLowerCase()=='j'){
   byeSpeaker.speak(names[i]);
 }
-   else{
+   else{names[i].charAt(0)
     helloSpeaker.speak(names[i]);
    }
   
@@ -72,6 +75,6 @@ if(names[i].toLowerCase(names[i].charAt(0))=='j'){
   //} else {
     // helloSpeaker.xxxx
   //}
-}
 
+}
 })();
